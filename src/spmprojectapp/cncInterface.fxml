@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="597.0" prefWidth="828.0" style="-fx-background-color: C7FDF4;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spmprojectapp.CncInterfaceController">
+   <children>
+      <Pane layoutX="-4.0" prefHeight="74.0" prefWidth="832.0" style="-fx-background-color: #C0C0C0; -fx-background-image: url('C:/Users/RASINDU/Desktop/per/pr.jpg');">
+         <children>
+            <Text fill="#408cbf" fontSmoothingType="LCD" layoutX="111.0" layoutY="58.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EasyProgramming" textAlignment="CENTER" wrappingWidth="453.13671875">
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="backBTN" layoutX="766.0" layoutY="-1.0" onAction="#backAction" prefHeight="36.0" prefWidth="66.0" style="-fx-background-color: red;" text="close" />
+         </children>
+      </Pane>
+      <Pane layoutX="-2.0" layoutY="74.0" prefHeight="36.0" prefWidth="828.0" style="-fx-background-color: C1FE8E;">
+         <children>
+            <Text layoutX="93.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Measuring the complexity of a program statement due to nesting of control structures (Cnc)">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Label fx:id="cncLbl" alignment="CENTER" contentDisplay="CENTER" layoutX="600.0" layoutY="231.0" prefHeight="36.0" prefWidth="148.0" style="-fx-background-color: #808080;" textAlignment="RIGHT">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Text layoutX="45.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Measuring the complexity of a program statement due to nesting of control structures (Cnc) value=" wrappingWidth="537.4921822026372">
+         <font>
+            <Font name="Segoe MDL2 Assets" size="15.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="reportBtn" layoutX="242.0" layoutY="338.0" prefHeight="35.0" prefWidth="345.0" style="-fx-background-color: #3333ff;" text="Genarate Report" />
+      <JFXButton fx:id="calBtn" layoutX="79.0" layoutY="139.0" onAction="#calculateCtc" prefHeight="52.0" prefWidth="80.0" style="-fx-background-color: BF90F6;" text="Calculate" />
+   </children>
+</AnchorPane>

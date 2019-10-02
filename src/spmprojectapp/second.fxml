@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="secondRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="676.0" prefWidth="795.0" style="-fx-background-color: C7FDF4;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spmprojectapp.SecondController">
+    <stylesheets>
+        <URL value="@second.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutY="-1.0" prefHeight="211.0" prefWidth="795.0" style="-fx-background-color: #C0C0C0; -fx-background-image: url('C:/Users/RASINDU/Desktop/per/pr.jpg');">
+         <children>
+            <Text fill="#408cbf" fontSmoothingType="LCD" layoutX="60.0" layoutY="116.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EasyProgramming" textAlignment="CENTER" wrappingWidth="453.13671875">
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="backBTN" layoutX="12.0" layoutY="10.0" onAction="#backAction" prefHeight="36.0" prefWidth="66.0" style="-fx-background-color: red;" text="Back" />
+         </children>
+      </Pane>
+      <JFXButton fx:id="firstBtn" layoutX="50.0" layoutY="263.0" onAction="#firstBtnClick" prefHeight="59.0" prefWidth="215.0" style="-fx-background-color: BF90F6;" text="Due to size" />
+      <JFXButton fx:id="secBtn" layoutX="50.0" layoutY="328.0" onAction="#secBtnClick" prefHeight="59.0" prefWidth="215.0" style="-fx-background-color: BF90F6;" text="Due to type of control structures" />
+      <JFXButton fx:id="thirdBtn" layoutX="49.0" layoutY="394.0" onAction="#thirdBtnClick" prefHeight="59.0" prefWidth="215.0" style="-fx-background-color: BF90F6;" text="Due to nesting of control structures" />
+      <JFXButton fx:id="fourthBtn" layoutX="49.0" layoutY="460.0" onAction="#fourthBtnClick" prefHeight="59.0" prefWidth="215.0" style="-fx-background-color: BF90F6;" text="Due to inheritance" />
+      <JFXButton fx:id="fiftBtn" layoutX="48.0" layoutY="526.0" onAction="#fiftBtnClick" prefHeight="59.0" prefWidth="215.0" style="-fx-background-color: BF90F6;" text="Due to Recursion" />
+      <JFXButton fx:id="sixBtn" layoutX="48.0" layoutY="592.0" onAction="#sixBtnClick" prefHeight="59.0" prefWidth="215.0" style="-fx-background-color: orange;" text="Total Compexity" />
+   </children>
+</AnchorPane>

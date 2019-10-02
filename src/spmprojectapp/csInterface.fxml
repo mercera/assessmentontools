@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="764.0" prefWidth="828.0" style="-fx-background-color: C7FDF4;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spmprojectapp.CsInterfaceController">
+   <children>
+      <Pane layoutX="-4.0" prefHeight="74.0" prefWidth="832.0" style="-fx-background-color: #C0C0C0; -fx-background-image: url('C:/Users/RASINDU/Desktop/per/pr.jpg');">
+         <children>
+            <Text fill="#408cbf" fontSmoothingType="LCD" layoutX="111.0" layoutY="58.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EasyProgramming" textAlignment="CENTER" wrappingWidth="453.13671875">
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="backBTN" layoutX="766.0" layoutY="-1.0" onAction="#backAction" prefHeight="36.0" prefWidth="66.0" style="-fx-background-color: red;" text="close" />
+         </children>
+      </Pane>
+      <Pane layoutY="74.0" prefHeight="36.0" prefWidth="828.0" style="-fx-background-color: C1FE8E;">
+         <children>
+            <Text layoutX="91.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Measuring the complexity of a program statement due to size (Cs)">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Label fx:id="arithLbl" alignment="CENTER" layoutX="511.0" layoutY="132.0" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #808080;" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Text layoutX="347.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="arithmatic complexity" wrappingWidth="147.9999942779541">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Label fx:id="relaLbl" alignment="CENTER" contentDisplay="CENTER" layoutX="511.0" layoutY="176.0" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #808080;" textAlignment="RIGHT" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Text layoutX="348.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="relational complexity" wrappingWidth="126.28320355713367">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Label fx:id="logiLbl" alignment="CENTER" contentDisplay="CENTER" layoutX="511.0" layoutY="221.0" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #808080;" textAlignment="RIGHT" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Text layoutX="351.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="logical complexity" wrappingWidth="115.28320355713367">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Label fx:id="bitLbl" alignment="CENTER" contentDisplay="CENTER" layoutX="512.0" layoutY="267.0" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #808080;" textAlignment="RIGHT" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Text layoutX="350.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="bitwise complexity" wrappingWidth="115.28320384025574">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Label fx:id="csLbl" alignment="CENTER" contentDisplay="CENTER" layoutX="551.0" layoutY="644.0" prefHeight="36.0" prefWidth="148.0" style="-fx-background-color: #808080;" textAlignment="RIGHT">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Text layoutX="53.0" layoutY="668.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Measuring the complexity of a program statement due to size (Cs Value) =" wrappingWidth="499.4921822026372">
+         <font>
+            <Font name="Segoe MDL2 Assets" size="15.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="reportBtn" layoutX="362.0" layoutY="706.0" prefHeight="35.0" prefWidth="345.0" style="-fx-background-color: #3333ff;" text="Genarate Report" />
+      <JFXButton fx:id="calBtn" layoutX="72.0" layoutY="148.0" onAction="#calculateCtc" prefHeight="52.0" prefWidth="80.0" style="-fx-background-color: BF90F6;" text="Calculate" />
+      <Label fx:id="misLbl" alignment="CENTER" contentDisplay="CENTER" layoutX="512.0" layoutY="313.0" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #808080;" textAlignment="RIGHT" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Text layoutX="350.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="miscellanous complexity" wrappingWidth="147.9999942779541">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Label fx:id="manLbl" alignment="CENTER" contentDisplay="CENTER" layoutX="512.0" layoutY="358.0" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #808080;" textAlignment="RIGHT" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Text layoutX="353.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manipulators complexity" wrappingWidth="147.9999942779541">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Label fx:id="assLbl" alignment="CENTER" contentDisplay="CENTER" layoutX="512.0" layoutY="403.0" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #808080;" textAlignment="RIGHT" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Text layoutX="353.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Assignment complexity" wrappingWidth="147.9999942779541">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Label fx:id="numLbl" alignment="CENTER" contentDisplay="CENTER" layoutX="512.0" layoutY="448.0" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #808080;" textAlignment="RIGHT" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Text layoutX="351.0" layoutY="475.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numeric complexity" wrappingWidth="147.9999942779541">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Label fx:id="dblLbl" alignment="CENTER" contentDisplay="CENTER" layoutX="511.0" layoutY="493.0" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #808080;" textAlignment="RIGHT" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Text layoutX="351.0" layoutY="517.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Double Qoutes" wrappingWidth="147.9999942779541">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Label fx:id="ndttLbl" alignment="CENTER" contentDisplay="CENTER" layoutX="510.0" layoutY="538.0" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #808080;" textAlignment="RIGHT" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Text layoutX="350.0" layoutY="562.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ndtts keywords" wrappingWidth="147.9999942779541">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Label fx:id="clsLbl" alignment="CENTER" contentDisplay="CENTER" layoutX="511.0" layoutY="584.0" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #808080;" textAlignment="RIGHT" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Text layoutX="349.0" layoutY="606.0" strokeType="OUTSIDE" strokeWidth="0.0" text="class,method,etc" wrappingWidth="147.9999942779541">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

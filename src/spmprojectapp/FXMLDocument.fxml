@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="676.0" prefWidth="795.0" style="-fx-background-color: C7FDF4;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spmprojectapp.FXMLDocumentController">
+    <children>
+      <Pane layoutY="-1.0" prefHeight="676.0" prefWidth="328.0" style="-fx-background-color: #C0C0C0; -fx-background-image: url('C:/Users/RASINDU/Desktop/per/pr.jpg');">
+         <children>
+            <ImageView fitHeight="184.0" fitWidth="328.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/pr.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutY="221.0" prefHeight="52.0" prefWidth="328.0" style="-fx-background-color: #cceeff;">
+               <children>
+                  <Text fill="#338bc6" fontSmoothingType="LCD" layoutX="1.0" layoutY="41.0" lineSpacing="1.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" text="EasyProgramming" textAlignment="CENTER" wrappingWidth="326.63977291435003">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Button fx:id="chooseBtn" layoutX="409.0" layoutY="408.0" mnemonicParsing="false" onAction="#filePicker" prefHeight="52.0" prefWidth="111.0" text="Choose File" />
+      <Label fx:id="fileLBL" layoutX="348.0" layoutY="290.0" prefHeight="94.0" prefWidth="433.0" text="Please Choose a file to continue!!!" textAlignment="JUSTIFY" textOverrun="CLIP">
+         <font>
+            <Font name="Comic Sans MS Bold" size="26.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="nextBTN" layoutX="643.0" layoutY="612.0" onAction="#loadSecond" prefHeight="56.0" prefWidth="143.0" style="-fx-background-color: #4D9AD4;" text="NEXT" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="Bell MT" size="15.0" />
+         </font>
+      </JFXButton>
+    </children>
+</AnchorPane>

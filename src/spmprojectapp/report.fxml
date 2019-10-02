@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="443.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spmprojectapp.ReportController">
+   <children>
+      <TableView fx:id="tblReport" layoutX="136.0" layoutY="101.0" prefHeight="200.0" prefWidth="423.0">
+        <columns>
+          <TableColumn fx:id="lineColumn" prefWidth="75.0" text="lineNo" />
+          <TableColumn fx:id="totalWeightColumn" prefWidth="75.0" text="programStatement" />
+        </columns>
+      </TableView>
+      <Button fx:id="reportBtn" layoutX="76.0" layoutY="47.0" mnemonicParsing="false" onAction="#genReport" text="Button" />
+   </children>
+</AnchorPane>
